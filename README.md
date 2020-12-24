@@ -10,7 +10,7 @@ The employee can submit a request to his manager or the addict without paper by 
 
 <table>
        <tr>
-      <td>Link to download apk</td><td>https://www.mediafire.com/file/rap09hjyvxwuv7x/ATM+app.apk/file</td><td></td>
+      <td>Link to Download Apk</td><td>https://www.mediafire.com/file/rap09hjyvxwuv7x/ATM+app.apk/file</td><td></td>
       </tr>
       <tr>
       <td> account type</td>  <td>account Email</td> <td> Password</td>
