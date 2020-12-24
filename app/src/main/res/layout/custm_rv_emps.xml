@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_containar_recycle_employee"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEmpData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="left|top"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical"
+                            tools:ignore="RtlHardcoded">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/empProImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/todo"
+                                android:elevation="2dp"
+                                android:src="@drawable/add_photo"
+                                app:civ_border_color="#B1A74B"
+                                app:civ_border_width="1dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtfname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textshap"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:gravity="center"
+                            android:padding="7dp"
+                            android:text="abderrahim"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtlname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textshap"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:gravity="center"
+                            android:padding="7dp"
+                            android:text="abdelmenem"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="example@gmail.com"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="+201000000000"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtrole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="employee"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtdepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="maintenance"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="SSS@123456"
+                    android:drawableEnd="@drawable/ic_show"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:ignore="TextViewEdits" />
+
+                <TextView
+                    android:id="@+id/txtdateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="1/1/1999 - 12:00:00PM"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtlastupdatedateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="1/1/1999 - 12:00:00PM"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

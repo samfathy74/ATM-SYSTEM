@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/ic_containar_recycle_all_emp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_containar_recycle_all_emp"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtParentEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/textshap"
+                android:drawableStart="@drawable/ic_online"
+                android:drawableEnd="@drawable/ic_flat_arrow_down"
+                android:fontFamily="@font/arsenal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="abderrahim@gmail.com"
+                android:textColor="#FF1100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEmpInData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="sam sam"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtAttendanceLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="Rd Al Farag - Belqas, Kafr Al Garaydah, Bila, Kafr El Sheikh Governorate, Egypt"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtDateTimeAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="false"
+                    android:text="ee\n1/1/1999 - 12:00:00 AM"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:drawableStart="@drawable/ic_online"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="Not Available"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtdateTimeLeaving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="ww\n1/1/1999 - 12:00:00 PM"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtLeaveLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="egypt - cairo"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

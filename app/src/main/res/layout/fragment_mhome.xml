@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flat_bg"
+    android:fillViewport="true"
+    tools:context=".manager.manager_fragments.fragment_mhome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon"
+                android:gravity="center"
+                android:text="@string/welcome_in_new_activity"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/tvWelcomeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:text="ٍSir, "
+                android:layout_marginVertical="15dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lemon"
+                    android:text="@string/wishes_a_good_day_to_start"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginVertical="25dp"
+                android:paddingVertical="15dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAllEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:clipToPadding="true"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginVertical="5dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_attendant_list" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:fontFamily="@font/coiny"
+                        android:gravity="center|bottom"
+                        android:shadowColor="@color/black"
+                        android:text="Attendance of employees"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:clipToPadding="true"
+                    app:cardBackgroundColor="@color/mofe1"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginVertical="5dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_attendance" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:fontFamily="@font/coiny"
+                        android:gravity="center|bottom"
+                        android:shadowColor="@color/black"
+                        android:text="Attendance History"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAttentive"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp"
+                    android:clipToPadding="true"
+                    app:cardBackgroundColor="#E91E63"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginVertical="5dp"
+                        android:src="@drawable/employeess" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:fontFamily="@font/coiny"
+                        android:gravity="center|bottom"
+                        android:shadowColor="@color/black"
+                        android:text="Follow Employee attentive"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

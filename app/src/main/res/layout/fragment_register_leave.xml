@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".employee.employee_fragments.fragment_register_leave">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Leaving Registration"
+            android:textAlignment="center"
+            android:textColor="@color/light_red"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/ic_containar_recycle_all_emp"
+            android:backgroundTint="@color/light_red"
+            android:elevation="15dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/currentTimeLeaving"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/coiny"
+                            android:gravity="center"
+                            android:text="00:00:00 PM"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/waitingImage"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/waiting" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="30dp"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/currentInfoLeaving"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bungee_inline"
+                            android:gravity="center"
+                            android:text="LEAVING REQUEST CLOSED NOW"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+
+                        <Button
+                            android:id="@+id/leaveBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_btn"
+                            android:backgroundTint="@color/gold2"
+                            android:elevation="8dp"
+                            android:fontFamily="@font/coiny"
+                            android:text="@string/send_leave_request"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

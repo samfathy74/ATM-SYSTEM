@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:background="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#30978D"
+            android:background="@drawable/ic_containar_recycle_all_emp"
+            android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/requestImg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_waiting"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/requestImg"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="left|start"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/requestType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/history"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/requestTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Wednesday) 22/10/2020 01:00:00 PM"
+                            android:textSize="13sp"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/requestSignature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Signature by Admin"
+                            android:textSize="13sp"
+                            android:layout_gravity="start|left"
+                            android:gravity="start|left"
+                            android:padding="5dp"
+                            android:textAlignment="textStart"
+                            android:visibility="visible"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/requestCase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Request Case :\nYour original code added the ValueEventListener to a reference that pointed to the root of the database structure. That is not where your data was, so your getValue() call did not return the data you expected. My change saves off the Query object that points to the specific data that you want, then attaches the ValueEventListener to that query so that getValue() returns the data you expect. "
+                            android:textSize="15sp"
+                            android:gravity="start|left"
+                            android:textAlignment="textStart"
+                            android:padding="5dp"
+                            android:layout_gravity="start|left"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:textColor="@color/white" />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/LinerLayoutEmptyRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            android:visibility="gone"
+            tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_empty_notify"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-40dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="There are no requests currently"
+                    android:textAlignment="center"
+                    android:textColor="#6B3CBC"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+
+</RelativeLayout>

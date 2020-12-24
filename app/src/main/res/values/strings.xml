@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ATM</string>
+    <string name="enter_first_name">enter first name</string>
+    <string name="todo">Image Description</string>
+    <string name="phone_with_country_key">enter phone number without key</string>
+    <string name="username">Username</string>
+    <string name="department">Department</string>
+    <string name="last_name">Last Name</string>
+    <string name="secondary_email">Secondary Email</string>
+    <string name="original_email">Original Email</string>
+    <string name="first_name">First Name</string>
+    <string name="update_password">Update password</string>
+    <string name="update">Update</string>
+    <string name="role">Role</string>
+    <string name="password">enter old password to update</string>
+
+
+    <string name="home">Home</string>
+    <string name="attend">Attend</string>
+    <string name="leave">Leave</string>
+    <string name="requests">Create Requests</string>
+    <string name="profile">Profile</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="attendance_requests_screen">Attendance Requests Screen</string>
+    <string name="leaving_request_screen">Leaving Request Screen</string>
+    <string name="profile_screen">Profile Screen</string>
+    <string name="requests_screen">Requests Screen</string>
+    <string name="welcome_in_new_activity">Welcome In New Day</string>
+    <string name="wishes_a_good_day_to_start">Wishes A Good Day To Start</string>
+    <string name="activity">ACTIVITY</string>
+    <string name="history">History</string>
+    <string name="updates">Update</string>
+    <string name="select_request_type">Select Request Type</string>
+    <string name="enter_your_cases">Enter Your Cases</string>
+    <string name="send_request">Send Request</string>
+    <string name="show_data">show Data</string>
+    <string name="your_data_is">Your data is :</string>
+    <string name="send_attendance_request">Send Attendance Request</string>
+    <string name="send_leave_request">SEND LEAVE REQUEST</string>
+    <string name="email">Email</string>
+    <string name="log_in">LOG IN</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

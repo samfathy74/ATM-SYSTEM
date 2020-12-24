@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/flat_bg"
+    tools:context=".employee.employee_activities.activity_emp_verify_phone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:onClick="onBackPressing"
+                    android:scaleType="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="Verify Phone Number"
+                    android:textColor="@color/mofe1"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center_horizontal"
+            android:text="CO\nDE"
+            android:textAllCaps="true"
+            android:textColor="@color/gold"
+            android:textSize="80sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="-115dp"
+            android:layout_marginBottom="90dp"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Verification"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center_horizontal"
+            android:text="Enter the 6-digits code we sent to"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center_horizontal"
+            android:text="+201234883483"
+            android:textColor="#F44336"
+            android:textSize="17sp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/phonePinCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:hideLineWhenFilled="true"
+            android:inputType="number|textPhonetic"
+            app:itemCount="6"
+            android:width="50dp"
+            android:height="50dp"
+            style="@style/PinWidget.PinView"
+            app:itemRadius="8dp"
+            android:cursorVisible="true"
+            app:itemSpacing="5dp"
+            app:cursorColor="#E91E63"
+            app:lineColor="@color/red" />
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Verify"
+            android:elevation="8dp"
+            android:background="@drawable/custom_btn"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/resendPhoneCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center_horizontal|bottom"
+            android:text="Resend code again?"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>

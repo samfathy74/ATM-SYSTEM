@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_containar_recycle_notification"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/parentLayoutN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textshap"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtRequestTimeN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/archivo_black"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="1/1/2002 - 12:12:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtRequestTypeN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/archivo_black"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="Leaving Early"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtEmailN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_close_mail"
+                    android:drawableEnd="@drawable/ic_flat_arrow_down"
+                    android:fontFamily="@font/arsenal"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="abdelmenem@firemail.com"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtFullnameN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="abdelmenem mohammed"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNotifyN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRequestDescripN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Request DescriptionRequest"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtLocationN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtRequestN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textshap"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Admin"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btnAccept"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start|left"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/backgroun_card"
+                        android:backgroundTint="#4CAF50"
+                        android:elevation="8dp"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:padding="10dp"
+                        android:text="Accept"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:visibility="visible"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/btnRefuse"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end|right"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/backgroun_card"
+                        android:backgroundTint="#F44336"
+                        android:elevation="8dp"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:padding="10dp"
+                        android:text="Refuse"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:visibility="visible"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinerLayoutEmptyNotify1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_empty_notify"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:gravity="center_horizontal"
+            android:text="There are no requests currently"
+            android:textAlignment="center"
+            android:textColor="#6B3CBC"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

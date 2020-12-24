@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/backgroud_alert</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="TextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="boxStrokeWidth">5dp</item>
+        <item name="boxStrokeColor">@color/black</item>
+    </style>
+
+    <style name="TextCounter" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="NumberPickerText">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+
+</resources>
