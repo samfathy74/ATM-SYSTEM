@@ -10,7 +10,7 @@ The employee can submit a request to his manager or the addict without paper by 
 
 <table>
        <tr>
-      <td>ATM apk with project file called "ATM app.apk"</td>
+      <td></td><td>ATM apk with project file called "ATM app.apk"</td><td></td>
       </tr>
       <tr>
       <td> account type</td>  <td>account Email</td> <td> Password</td>
