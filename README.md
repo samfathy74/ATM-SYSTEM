@@ -1,5 +1,5 @@
 # ATM-SYSTEM
-Our app aims to improve all aspects of your business, workflow, tracking and control. Managing and monitoring the attendance of employees and following up on employee requests and responding to them...
+Our app aims to improve all aspects of your business, workflow, tracking and control. Managing and monitoring the attendance of employees and following up on employee requests and responding to them....
 
 Our app has some features including
 Full control of the admin in the system, whether in adding new employees or modifying the old data, and he can also review the employees ’requests submitted to him and respond to them and see the attendance and departure records and review them even after the working day has passed, in addition to managing the departments and determining the employees working in them and appointing a manager for this department.
