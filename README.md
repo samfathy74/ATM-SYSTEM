@@ -16,7 +16,7 @@ The employee can submit a request to his manager or the addict without paper by 
       <td> account type</td>  <td>account Email</td> <td> Password</td>
       </tr>
   <tr>
-<td>Admin account </td> <td>Admin@firemail.com</td> <td> Admin@2020</td>
+<td>Admin account </td> <td>Admin***@firemail.com</td> <td> ************</td>
  <tr/>
    <tr>
 <td>Manager account</td> <td>Manager@firemail.com </td> <td>Manager@2020</td>
